@@ -31,19 +31,40 @@ pip install opencv-python pycryptodome
 
 #### Running the Program
 
-1. **Clone this repository to your local machine:**
+1. **Clone this repository to your local machine without GUI:**
 
 ```bash
-git clone https://github.com/yourusername/secure-data-hiding-in-image-using-steganography.git
+git clone https://github.com/nothingisuseless/cybersecurity-edunet.git
 
-cd secure-data-hiding-in-image-using-steganography
+cd cybersecurity-edunet/without_GUI/
 ```
 
-2. **Run the main program using python:**
+2. **Run the main program using python without GUI:**
 
 ```bash
 python steganography_normal.py
 ```
+
+3. **For Running with GUI**
+
+```bash
+git clone https://github.com/nothingisuseless/cybersecurity-edunet.git
+
+cd cybersecurity-edunet/GUI/
+```
+
+4. **Run the encryption script first using streamlit**
+
+```bash
+streamlit run encryption.py
+```
+
+5. **For decryption, add the passcode.txt file and private and public keys to the same folder then run**
+
+```bash
+streamlit run decryption.py
+```
+
 
 ## Step by step process
 
