@@ -2,9 +2,11 @@
 
 This project allows you to securely hide messages inside images using encryption and steganography. It involves the following steps:
 
-**Passcode Encryption**: A passcode is used for authentication, and the passcode is encrypted using public-key encryption.
-**Message Hiding**: The secret message is hidden inside an image using steganography techniques.
-**Decryption**: The encrypted passcode is verified, and the hidden message is revealed from the image.
+## Passcode Encryption : A passcode is used for authentication, and the passcode is encrypted using public-key encryption.
+
+## Message Hiding : The secret message is hidden inside an image using steganography techniques.
+
+## Decryption : The encrypted passcode is verified, and the hidden message is revealed from the image.
 
 
 **Features**
