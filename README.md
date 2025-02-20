@@ -1,4 +1,4 @@
-# Passcode Encryption and Image Steganography
+# Secure Data Hiding in Image using Steganography
 
 This project allows you to securely hide messages inside images using encryption and steganography. It involves the following steps:
 
@@ -16,7 +16,8 @@ Before you begin, ensure that you have the following installed:
 
 Python 3.x
 Required Python libraries (listed below)
-Required Python Libraries
+
+**Required Python Libraries**
 cv2 (OpenCV)
 os
 string
@@ -27,57 +28,73 @@ time
 **bash**
 
 pip install opencv-python
-Usage
-Running the Program
-Clone this repository to your local machine:
-bash
 
-git clone https://github.com/yourusername/passcode-encryption-image-steganography.git
-cd passcode-encryption-image-steganography
+**Usage**
+
+**Running the Program**
+Clone this repository to your local machine:
+**bash**
+
+**git clone https://github.com/yourusername/passcode-encryption-image-steganography.git
+cd passcode-encryption-image-steganography**
+
 Start the program by running:
-bash
-Copy
-python main.py
+
+**bash**
+
+python steganography_normal.py
 The program will prompt you to choose between encryption or decryption:
 
 1. Encryption: Encrypt a passcode, hide a message inside an image, and save the output.
 2. Decryption: Decrypt an encrypted passcode, verify it, and extract the hidden message from the image.
-Step-by-Step Guide
-1. Encryption
-When you select Encryption, the following steps will occur:
-The program will generate public and private keys.
-You will input a secret message to hide and a passcode for authentication.
-The passcode will be encrypted.
-You will provide an image file to embed the secret message.
-The encrypted image will be saved at the output path you specify.
-2. Decryption
-When you select Decryption, the following steps will occur:
-You will input a passcode.
-You will provide the path to the encrypted passcode file.
-The passcode will be decrypted, and its validity will be verified.
-You will provide the path to the encrypted image.
-The hidden message in the image will be revealed.
-Example
-Encryption:
 
-yaml
-Copy
-1. Encryption
-Enter your message to be hidden: Hello, this is a secret message!
-Enter a passcode for authentication: mypasscode
-Enter the image path: input_image.png
-Enter the output image path: output_image.png
-Decryption:
+**Step-by-Step Guide**
 
-pgsql
-Copy
-2. Decryption
-Enter a passcode for authentication: mypasscode
-Enter the path to the encrypted passcode file: encrypted_passcode.bin
-Enter the path to the encrypted image file: output_image.png
-Project Structure
-bash
-Copy
+**1. Encryption**
+
+**Process:**
+
+1. The program will generate public and private keys for passcode encryption.
+
+2. You will input a secret message and a passcode for authentication.
+
+3. The passcode will be encrypted.
+
+4. You will provide an image file to embed the secret message.
+
+5. The program will save the encrypted image at your specified location.
+
+**Algorithm for Encryption:**
+The message characters are converted to their ASCII values.
+
+The gcd (greatest common divisor) of the image dimensions is used as a pattern to encode the message into the image.
+
+Pixels are modified according to the message's characters, and the result is saved as a new image.
+
+**2. Decryption**
+
+**Process:**
+
+1. You will input the passcode.
+
+2. You will provide the path to the encrypted passcode file.
+
+3. The passcode will be decrypted, and its validity will be verified.
+
+4. You will input the path to the encrypted image file.
+
+5. The hidden message will be extracted and displayed.
+
+
+Algorithm for Decryption:
+
+The program reads the image and checks pixel values based on the gcd of the image dimensions.
+
+It retrieves the hidden message encoded in the pixel values of the blue channel of the image.
+
+It stops extracting characters once the message length is reached.
+
+
 .
 ├── main.py               # Main program to run encryption and decryption
 ├── encryption.py         # Handles encryption operations (encode passcode and message)
