@@ -17,9 +17,8 @@ Make sure you have the following installed:
 ### Required Python Libraries
 
 - `opencv-python` (for image manipulation)
-- `streamlit` (for creating an interactive UI)
 
 You can install the required dependencies using `pip`:
 
 ```bash
-pip install opencv-python streamlit
+pip install opencv-python
