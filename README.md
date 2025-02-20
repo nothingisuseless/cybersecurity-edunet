@@ -17,6 +17,7 @@ Make sure you have the following installed:
 ### Required Python Libraries
 
 - `opencv-python` (for image manipulation)
+- `pycryptodome` (for key generations)
 
 You can install the required dependencies using `pip`:
 
@@ -28,12 +29,18 @@ pip install opencv-python pycryptodome
 ### Usage
 
 
-Running the Program
+#### Running the Program
 
-Clone this repository to your local machine:
+1. **Clone this repository to your local machine:**
 
 ```bash
 git clone https://github.com/yourusername/secure-data-hiding-in-image-using-steganography.git
 
 cd secure-data-hiding-in-image-using-steganography
+```
+
+2. **Run the main program using python:**
+
+```bash
+python steganography_normal.py
 ```
