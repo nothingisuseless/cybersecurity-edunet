@@ -24,7 +24,7 @@ def app():
     st.title("Image Decoder")
 
     # File uploader to upload an image
-    uploaded_file = st.file_uploader("Choose an Image", type=["jpg", "jpeg", "png"])
+    uploaded_file = st.file_uploader("Choose the encoded image", type=["jpg", "jpeg", "png"])
 
     if uploaded_file:
         # Display the uploaded image
