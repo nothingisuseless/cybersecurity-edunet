@@ -21,4 +21,4 @@ Make sure you have the following installed:
 You can install the required dependencies using `pip`:
 
 ```bash
-pip install opencv-python
+pip install opencv-python pycryptodome
