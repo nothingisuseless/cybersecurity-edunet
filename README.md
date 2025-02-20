@@ -72,7 +72,7 @@ streamlit run decryption.py
 
 2. Receiver sends their private key to the sender
 
-3. Sender generates the passcode while encoding process and encrypts it with public key of the receiver and then encodes it in image
+3. Sender generates the passcode file (txt) while encoding process and encrypts it with public key of the receiver and then encodes it in image
 
 4. Sender sends the image and the encrypted passcode file to receiver which can be only opened using private key of receiver
 
