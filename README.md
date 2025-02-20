@@ -101,8 +101,12 @@ It stops extracting characters once the message length is reached.
 .
 .
 ├── encryption.py         # Handles encryption operations (encoding the passcode and message)
+
 ├── decryption.py         # Handles decryption operations (decoding the passcode and message)
+
 ├── passcode_exchange_using_public_key.py  # Logic for key generation, passcode encryption/decryption
+
 ├── steganography_normal.py               # Main program to run encryption and decryption
+
 ├── README.md             # Project documentation
 
