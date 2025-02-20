@@ -1,5 +1,5 @@
 import cv2
-import streamlit as st
+
 
 
 def char_generator(message):
@@ -29,5 +29,5 @@ def encode_image(image_location, msg,output_image_path):
           img[i-1][j-1][0] = 0
           # Save the encoded image
           cv2.imwrite(output_image_path, img)
-          st.write(f"[*] Image with encoded message saved as {output_image_path}")
+          print(f"[*] Image with encoded message saved as {output_image_path}")
           return 
