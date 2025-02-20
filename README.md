@@ -23,6 +23,7 @@ You can install the required dependencies using `pip`:
 ```bash
 pip install opencv-python pycryptodome
 
+```
 
 ### Usage
 
@@ -31,5 +32,8 @@ Running the Program
 
 Clone this repository to your local machine:
 
-bash
+```bash
+git clone https://github.com/yourusername/secure-data-hiding-in-image-using-steganography.git
 
+cd secure-data-hiding-in-image-using-steganography
+```
