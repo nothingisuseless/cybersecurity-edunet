@@ -22,3 +22,14 @@ You can install the required dependencies using `pip`:
 
 ```bash
 pip install opencv-python pycryptodome
+
+
+### Usage
+
+
+Running the Program
+
+Clone this repository to your local machine:
+
+bash
+
