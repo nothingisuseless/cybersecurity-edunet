@@ -26,7 +26,7 @@ pip install opencv-python pycryptodome
 
 ```
 
-### Usage
+## Usage
 
 
 #### Running the Program
@@ -44,3 +44,15 @@ cd secure-data-hiding-in-image-using-steganography
 ```bash
 python steganography_normal.py
 ```
+
+## Step by step process
+
+1. Public and Private key generation
+
+2. Receiver sends their private key to the sender
+
+3. Sender generates the passcode while encoding process and encrypts it with public key of the receiver and then encodes it in image
+
+4. Sender sends the image and the encrypted passcode file to receiver which can be only opened using private key of receiver
+
+5. Once the sender enters the correct passcode, the hidden text is visible
