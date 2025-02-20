@@ -8,7 +8,7 @@ This project allows you to securely hide messages inside images using encryption
 
 **3. Decryption** : The encrypted passcode is verified, and the hidden message is revealed from the image.
 
-################################################################################################
+
 
 **Features**
 **Encryption**: Encrypt a passcode for authentication, hide a secret message inside an image, and save the modified image.
@@ -99,8 +99,10 @@ It stops extracting characters once the message length is reached.
 
 
 .
-├── main.py               # Main program to run encryption and decryption
-├── encryption.py         # Handles encryption operations (encode passcode and message)
-├── decryption.py         # Handles decryption operations (decode passcode and message)
-├── passcode_exchange_using_public_key.py  # Contains logic for key generation, passcode encryption/decryption
-└── README.md             # Project documentation
+.
+├── encryption.py         # Handles encryption operations (encoding the passcode and message)
+├── decryption.py         # Handles decryption operations (decoding the passcode and message)
+├── passcode_exchange_using_public_key.py  # Logic for key generation, passcode encryption/decryption
+├── steganography_normal.py               # Main program to run encryption and decryption
+├── README.md             # Project documentation
+
